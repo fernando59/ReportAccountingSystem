@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ReportSource">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=DESKTOP-3AON3MA;Initial Catalog=accounting_system</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>6fdd7688-c046-4e0a-a438-eab153d7a20c</DataSourceID>
+</RptDataSource>

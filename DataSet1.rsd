@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>ReportSource</DataSourceReference>
+      <CommandText>SELECT tc.nameCompany,tc.email,tc.cellphone,tc.nit,tc.sigla,tu.nameUser
+from tblCompanies tc,tblUsers tu where  tc.idUser  = tu.idUser</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="sigla">
+        <DataField>sigla</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="nameCompany">
+        <DataField>nameCompany</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="email">
+        <DataField>email</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="cellphone">
+        <DataField>cellphone</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="nit">
+        <DataField>nit</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="nameUser">
+        <DataField>nameUser</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

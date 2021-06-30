@@ -55,15 +55,19 @@
     <DataSource Include="ReportSource.rds" />
   </ItemGroup>
   <ItemGroup>
+    <Report Include="BalanceSheet.rdl" />
     <Report Include="ReportAccount.rdl" />
     <Report Include="ReportCompany.rdl" />
     <Report Include="ReportDiaryBook.rdl" />
     <Report Include="ReportInitialBalance.rdl" />
     <Report Include="ReportLedger.rdl" />
     <Report Include="ReportManagement.rdl" />
+    <Report Include="ReportNote.rdl" />
+    <Report Include="ReportNoteSale.rdl" />
     <Report Include="ReportPeriods.rdl" />
     <Report Include="ReportSumsAndBalance.rdl" />
     <Report Include="ReportVoucher.rdl" />
+    <Report Include="StatementOfIncome.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

@@ -32,7 +32,7 @@ from tblVoucher tv,tblVoucherDetail tvd, tblAccounts ta,tblCompanies tco,tblMana
 where tv.idVoucher = tvd.idVoucher and tco.idCompany = tv.idCompany 
 and tvd.idAccount = ta.idAccount and tco.idCompany = tm.idCompany 
 and tm.idManagement = tp.idManagement and tv.dateVoucher &gt;= tp.startDate and tv.dateVoucher &lt;=tp.endDate and  tv.idCompany =@idCompany and tm.idManagement =@idManagement and tp.idPeriod in (@idPeriod)
-</CommandText>
+order by tv.dateVoucher asc</CommandText>
       </Query>
       <Fields>
         <Field Name="nameAccount">
@@ -1203,7 +1203,6 @@ Fields!amountAssetsAlt.Value)</Value>
     <ReportParameter Name="idCompany">
       <DataType>String</DataType>
       <Prompt>id Company</Prompt>
-      <Hidden>true</Hidden>
     </ReportParameter>
     <ReportParameter Name="idManagement">
       <DataType>String</DataType>
